@@ -208,7 +208,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 <nav><div class="wrap">
   <a class="logo" href="#top"><i></i>Atharv Automation Studio</a>
   <div class="nav-actions">
-    <a class="btn pri" href="browse.html">Open Library App →</a>
+    <a class="btn pri" id="navBrowse" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener">Explore on GitHub ↗</a>
     <a class="btn" id="navRepo" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 </div></nav>
@@ -221,7 +221,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
       <h1>1,044 n8n workflows. <em>Paste.</em> Run.</h1>
       <p class="lede" id="lede">The searchable, deduplicated, security-audited n8n library with an interactive node visualizer. Copy the JSON, paste on your canvas, ship.</p>
       <div class="ctas">
-        <a class="btn pri" id="heroBrowse" href="browse.html">Browse the library app →</a>
+        <a class="btn pri" id="heroBrowse" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener">Browse on GitHub ↗</a>
         <a class="btn" id="heroRepo" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener">GitHub Repo</a>
         <a class="btn" href="#how">How it works</a>
       </div>
@@ -319,7 +319,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <span class="mono">Everything built in</span>
     <h2 class="bh">A library that works like a product.</h2>
     <div class="bento">
-      <div class="bc big" data-r data-tilt><span class="mono">Search</span><h3>Find anything instantly</h3><p>Search by name, AI agent, Slack, Shopify, webhook or RAG. Press <kbd>/</kbd> to jump straight in.</p></div>
+      <div class="bc big" data-r data-tilt><span class="mono">Search</span><h3>Find anything instantly</h3><p>Browse 30 domain directories or search directly on GitHub. Every workflow is audited and indexed.</p></div>
       <div class="bc" data-r data-tilt><span class="mono">Filters</span><h3>Slice 1,044 workflows</h3><p>Category, integration, trigger, complexity and credentials.</p></div>
       <div class="bc" data-r data-tilt><span class="mono">Visualizer</span><h3>Zoomable node graph</h3><p>Inspect nodes, triggers and config before you commit.</p></div>
       <div class="bc" data-r data-tilt><span class="mono">Import</span><h3>Copy &amp; download</h3><p>One-click clipboard copy or .json download.</p></div>
@@ -366,7 +366,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
     <h2>Stop rebuilding. Step into the workflow explorer.</h2>
     <p class="lede" style="margin:0 auto 30px;max-width:48ch">Search, filter by complexity, inspect visual node chains, and copy JSON directly to your n8n canvas.</p>
     <div class="ctas" style="justify-content:center">
-      <a class="btn pri" id="ctaBrowse" href="browse.html" style="font-size:16px;padding:14px 28px">Open Workflow Explorer →</a>
+      <a class="btn pri" id="ctaBrowse" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener" style="font-size:16px;padding:14px 28px">Explore on GitHub ↗</a>
       <a class="btn" id="ctaRepo" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener">Star on GitHub ↗</a>
     </div>
   </div>
@@ -385,9 +385,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
   <div class="dock-inner">
     <div class="dock-text">
       <strong>Atharv Workplace</strong>
-      <span>1,044 production workflows ready to paste</span>
+      <span>1,044 curated automations on GitHub</span>
     </div>
-    <a class="btn pri" href="browse.html">Open Explorer →</a>
+    <a class="btn pri" id="dockBrowse" href="https://github.com/cyber-atharv/n8n-workflow-library" target="_blank" rel="noopener">View on GitHub ↗</a>
   </div>
 </div>
 
@@ -395,21 +395,21 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 const CONFIG = {
   repo: "https://github.com/cyber-atharv/n8n-workflow-library",
   categories: [
-    {n:"01",t:"AI Agents & LLMs",d:"LLM chains, prompts, tool-calling agents.",c:"40 workflows"},
-    {n:"02",t:"OpenAI & AI Integrations",d:"GPT-4o, Claude 3.5, Gemini, Perplexity.",c:"40 workflows"},
-    {n:"03",t:"RAG & Vector Databases",d:"Qdrant, Pinecone, Chroma embeddings.",c:"39 workflows"},
-    {n:"04",t:"Chatbots & Conversational",d:"Customer assistants, dialogue flows.",c:"40 workflows"},
-    {n:"05",t:"WhatsApp, Telegram & Slack",d:"Multi-channel messaging & alerts.",c:"40 workflows"},
-    {n:"06",t:"Web Scraping & Browser",d:"Headless scraping, spiders, HTML extract.",c:"34 workflows"},
-    {n:"07",t:"Lead Gen & Enrichment",d:"Hunter, Clearbit, B2B intelligence.",c:"37 workflows"},
-    {n:"08",t:"Email Marketing & Outreach",d:"SendGrid, Mailchimp, campaigns.",c:"39 workflows"},
-    {n:"09",t:"Social Media Publishing",d:"Twitter/X, LinkedIn, auto-schedulers.",c:"40 workflows"},
-    {n:"10",t:"E-Commerce & Shopify",d:"Orders, cart recovery, inventory.",c:"40 workflows"}
+    {n:"01",t:"AI Agents & LLMs",f:"01 - AI Agents & LLMs",d:"LLM chains, prompts, tool-calling agents.",c:"40 workflows"},
+    {n:"02",t:"OpenAI & AI Integrations",f:"02 - OpenAI & AI Integrations",d:"GPT-4o, Claude 3.5, Gemini, Perplexity.",c:"40 workflows"},
+    {n:"03",t:"RAG & Vector Databases",f:"03 - RAG & Vector Databases",d:"Qdrant, Pinecone, Chroma embeddings.",c:"39 workflows"},
+    {n:"04",t:"Chatbots & Conversational",f:"04 - Chatbots & Conversational",d:"Customer assistants, dialogue flows.",c:"40 workflows"},
+    {n:"05",t:"WhatsApp, Telegram & Slack",f:"05 - WhatsApp, Telegram, Discord & Slack",d:"Multi-channel messaging & alerts.",c:"40 workflows"},
+    {n:"06",t:"Web Scraping & Browser",f:"06 - Web Scraping & Browser Automation",d:"Headless scraping, spiders, HTML extract.",c:"34 workflows"},
+    {n:"07",t:"Lead Gen & Enrichment",f:"07 - Lead Generation & Enrichment",d:"Hunter, Clearbit, B2B intelligence.",c:"37 workflows"},
+    {n:"08",t:"Email Marketing & Outreach",f:"08 - Email Marketing & Outreach",d:"SendGrid, Mailchimp, campaigns.",c:"39 workflows"},
+    {n:"09",t:"Social Media Publishing",f:"09 - Social Media Publishing",d:"Twitter/X, LinkedIn, auto-schedulers.",c:"40 workflows"},
+    {n:"10",t:"E-Commerce & Shopify",f:"11 - E-Commerce & Shopify",d:"Orders, cart recovery, inventory.",c:"40 workflows"}
   ]
 };
 
 const $ = s => document.querySelector(s);
-["navRepo","heroRepo","ctaRepo"].forEach(id => {
+["navBrowse","navRepo","heroBrowse","heroRepo","ctaBrowse","ctaRepo","dockBrowse"].forEach(id => {
   const el = $("#" + id);
   if (el) el.href = CONFIG.repo;
 });
@@ -423,7 +423,9 @@ const GAP = 580, world = $("#world"), N = CONFIG.categories.length;
 CONFIG.categories.forEach((c, i) => {
   const el = document.createElement("a");
   el.className = "card";
-  el.href = "browse.html?cat=" + encodeURIComponent(c.t);
+  el.href = `${CONFIG.repo}/tree/main/workflows/${encodeURIComponent(c.f || c.t)}`;
+  el.target = "_blank";
+  el.rel = "noopener";
   const x = (i % 2 ? 1 : -1) * (120 + (i % 3) * 40), y = (i % 3 - 1) * 60;
   el._z = -i * GAP; el._x = x; el._y = y;
   el.innerHTML = `<div class="tag mono"><span>${c.c}</span><span>↗</span></div><div class="n">${c.n}</div><h3>${c.t}</h3><p>${c.d}</p>`;
